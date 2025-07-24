@@ -1,0 +1,16 @@
+# Emotionally Responsible Recommender System
+
+## Overview
+This repository contains the code for an **emotionally responsible recommender system** that optimizes for user well-being across multiple interaction sessions. It uses sentiment analysis to measure the emotional state of users at the end of each session and adapts content recommendations accordingly to promote positive emotional experiences.
+
+## Files Included
+1. **sentiment_analysis.py**: Sentiment analysis using TextBlob
+2. **recommender_system.py**: Core logic for recommending content based on emotional history
+3. **data_processing.py**: Helper functions for cleaning and processing data
+4. **sample_data/**: Example dataset for testing (if applicable)
+
+## How to Run the Code
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/emotionally-responsible-recommender.git
