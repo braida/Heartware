@@ -1,0 +1,80 @@
+### **Toward an Emotionally Responsible Recommender System**
+
+#### *Modeling and Optimizing Well-Being Loops*
+
+**Author:** Naima Bouri
+**Date:** July 2025
+**License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+---
+
+### ✨ Abstract
+
+Most modern recommender systems optimize engagement without explicitly considering the emotional state of users. Here, we propose a pioneering model that measures, learns from, and optimizes emotional transitions between interaction sessions on social platforms (e.g., Twitter), with the explicit goal of enhancing user well-being.
+
+---
+
+### 📊 Background
+
+Social media platforms significantly influence the mood and emotional stability of users. Yet current models:
+
+* Encourage polarizing or anxiety-inducing content
+* Lack mechanisms for emotional regulation
+* Ignore the link between **session end states** and **subsequent session entry points**
+
+---
+
+###  Proposed Model
+
+**Data Inputs:**
+
+* NLP sentiment score for each interaction (tweet viewed, liked, commented)
+* End-of-session score (average sentiment over last 5 content items seen)
+* Start-of-next-session score (sentiment from first item viewed and reaction)
+* Topic well-being relevance (measured by a curated scale)
+
+**Key Metric:**
+`Delta Sentiment = Sentiment_(t+1) − Sentiment_t`
+
+**Recommendation weight =**
+`0.6 × Delta Sentiment + 0.4 × WellBeingRelevance`
+
+---
+
+###  Feedback Loop
+
+* If Delta Sentiment > 0 → content is positively reinforced
+* If Delta Sentiment < 0 → content is deprioritized, replaced, or reframed with uplifting content
+
+---
+
+###  Twitter-Specific Application
+
+* Emotion tracking over time
+* Alternative feed mode: “Well-Being First Mode”
+* Goal: reduce doomscrolling and emotional exhaustion
+
+---
+
+###  Potential Impact
+
+* Breaks negative recommendation cycles
+* Fosters emotional resilience
+* Enables ethical, human-centered AI (Tech4Good)
+
+---
+
+###  Possible Extensions
+
+* Biometric or behavioral signals (e.g., heart rate, fatigue)
+* Journaling / self-reflection tools
+* Public API for platform audit: *“Does this app improve your mood?”*
+
+---
+
+### ✨ Conclusion
+
+It is both technically and ethically feasible to build recommender systems that support well-being. By connecting emotional session data with recommendation logic, we unlock the potential for emotionally intelligent digital platforms.
+
+---
+
